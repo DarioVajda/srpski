@@ -1,9 +1,38 @@
 .sidebar {
-    position: sticky;
-    top: calc(1.3rem * 2);
-    width: 12em;
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: var(--sidebar-width);
     height: calc(100vh - 1.3rem * 2);
     background-color: var(--light-background);
-    /* border: 1px solid var(--light-text);
-    border-color: transparent var(--light-text) transparent transparent */
+    border: 1px solid var(--light-text);
+    border-color: transparent var(--light-text) transparent transparent
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+.naslov {
+    font-size: 1.1rem;
+    margin: 1em 0 0 1em;
+}
+
+.podnaslov {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    margin: 0.4em;
+    margin-left: 3em;
+}
+
+.naslov, .podnaslov {
+    cursor: pointer;
+    transition: scale 0.3s ease-in-out;
+    width: fit-content;
+}
+
+.naslov:hover, .podnaslov:hover {
+    scale: 1.1;
 }

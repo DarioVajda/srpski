@@ -1,4 +1,6 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 
 import styles from './page.module.css';
 
@@ -10,17 +12,23 @@ import Footer from '@/components/skelet/footer/Footer';
 
 export default function Page({ params }) {
 
+  const [ showingNavBar, setShowingNavBar ] = useState(false);
+
+  const showNavBar = () => {
+    setShowingNavBar(!showingNavBar)
+  }
+
   return (
     <div className={styles.wrapper}>
-      <Header lektira={params.lektira} />
+      <Header lektira={params.lektira} showNavBar={showNavBar} />
       <div>
-        <Sidebar lektira={params.lektira} />
+        <Sidebar lektira={params.lektira} showing={showNavBar} />
         <div>
           {
             lektire[params.lektira] && 
             lektire[params.lektira].sadrzaj && 
             lektire[params.lektira].sadrzaj.map((element, index) => (
-              <div id={index}>{element.blok}</div>
+              <div key={index}>{element.blok}</div>
             ))
           }
           <Footer lektira={params.lektira} />

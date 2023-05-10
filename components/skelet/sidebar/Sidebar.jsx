@@ -1,11 +1,33 @@
 import React from 'react'
 import styles from './sidebar.module.css'
 
-const Sidebar = () => {
+import Link from 'next/link'
+
+import lektire from '@/components/lektire'
+
+const Sidebar = ({ lektira, showing }) => {
   return (
-    // ovo sa klasom ne mora da bude tu ali sam napisao da pokazem kako se koristi css koji napises u .module.css fajl
     <div className={styles.sidebar}>
-      sadrzaj
+      <Link href='/'><div className={styles.naslov}>Aleksandar Slavov</div></Link>
+      {
+        Object.keys(lektire).map((key, index) => (
+          <div key={index}>
+            <Link href={key}>
+              <div className={styles.naslov} >
+                „{lektire[key].naslov}”
+              </div>
+            </Link>
+            {
+              key === lektira &&
+              lektire[key].sadrzaj.map((element, i) => element.blok === 'podnaslov' ? (
+                <div key={i} className={styles.podnaslov} >
+                  {element.tekst}
+                </div>
+              ) : null)
+            }
+          </div>
+        ))
+      }
     </div>
   )
 }

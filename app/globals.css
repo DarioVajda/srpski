@@ -5,20 +5,23 @@
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
-    --background: white;
-    --light-background: rgb(227, 227, 227);
-    --lightest-background: #b5b5b5;
-    --light-background-transparent: #a2adbbaa;
-    --lightest-background-transparent: #9aa5b7aa;
-    --text: #000000;
-    --light-text: #303030;
-    --primary: #017DEB;
-    --primary-variant: #40a6ff;
-    --secondary: #ffba24;
-    --secondary-variant: #edaa00;
-    --error: #ff0000;
-    --error-light: #dc5555;
-    --link: #0000EE;
+  --background: white;
+  --light-background: rgb(227, 227, 227);
+  --lightest-background: #b5b5b5;
+  --light-background-transparent: #a2adbbaa;
+  --lightest-background-transparent: #9aa5b7aa;
+  --text: #000000;
+  --light-text: #303030;
+  --primary: #017DEB;
+  --primary-variant: #40a6ff;
+  --secondary: #ffba24;
+  --secondary-variant: #edaa00;
+  --error: #ff0000;
+  --error-light: #dc5555;
+  --link: #0000EE;
+
+  --header-height: 2.6rem;
+  --sidebar-width: 14rem;
 }
 
 @media (prefers-color-scheme: dark) {

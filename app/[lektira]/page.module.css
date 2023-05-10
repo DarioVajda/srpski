@@ -3,23 +3,17 @@
     flex-direction: column;
 }
 
-.wrapper>*:first-child {
-    position: fixed;
-    top: 0;
-    background-color: var(--primary);
-    color: var(--text);
-    width: 100%;
-    height: 2em;
-    font-size: 1.3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .wrapper>*:last-child {
-    min-height: 120vh;
+    min-height: 200vh;
     padding-top: calc(1.3rem * 2);
 
     display: flex;
     flex-direction: row;
+    padding-left: var(--sidebar-width);
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper>*:last-child {
+        padding-left: 0;
+    }
 }
