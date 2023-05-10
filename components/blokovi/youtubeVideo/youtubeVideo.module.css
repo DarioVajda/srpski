@@ -1,0 +1,16 @@
+.youtubeVideo {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+  
+.youtubeVideo iframe {
+    left: 0;
+    top: 0;
+    min-height: 50%;
+    min-width: 50%;
+    position: absolute;
+}
+  
+  
