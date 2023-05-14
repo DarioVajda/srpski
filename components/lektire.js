@@ -9,6 +9,7 @@ const lektire = {
             { blok: 'slika', putanja: 'https://play-lh.googleusercontent.com/5B6Z4GWPuAlrnZDtqI8tdlnngu4dg-QG3lD2OTIvyvzSGCRJibEDaAbvQr6TMCPjqUc'},
             { blok: 'podnaslov', tekst: 'Analiza dela' },
             { blok: 'paragraf', tekst: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore disputandum putant. Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium.' },
+            { blok: 'pdf', putanja: 'https://www.rastko.rs/drama/ssd/ssd19/m_milenkovic.pdf'},
             { blok: 'razmak'},
             { blok: 'podnaslov', tekst: 'Likovi' },
             { blok: 'paragraf', tekst: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore disputandum putant. Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium.' },

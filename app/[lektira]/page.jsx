@@ -15,6 +15,7 @@ import Podnaslov from '@/components/blokovi/podnaslov/Podnaslov';
 import YoutubeVideo from '@/components/blokovi/youtubeVideo/YoutubeVideo';
 import Razmak from '@/components/blokovi/razmak/Razmak';
 import Slika from '@/components/blokovi/slika/Slika';
+import Pdf from '@/components/blokovi/pdf/Pdf';
 
 function pickComponent(args){
   switch (args.blok) {
@@ -25,7 +26,9 @@ function pickComponent(args){
     case 'ytVideo':
       return <YoutubeVideo href={args.href}/>
     case 'slika':
-      return <Slika putanja={args.putanja} visina={args.visina} sirina={args.sirina}/>
+      return <Slika putanja={args.putanja}/>
+    case 'pdf':
+      return <Pdf putanja={args.putanja}/>
     case 'razmak':
       return <Razmak/>
     default:
