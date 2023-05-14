@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import styles from './sidebar.module.css'
 
@@ -7,8 +9,8 @@ import lektire from '@/components/lektire'
 
 const Sidebar = ({ lektira, showing }) => {
   return (
-    <div className={styles.sidebar}>
-      <Link href='/'><div className={styles.naslov}>Aleksandar Slavov</div></Link>
+    <div className={`${styles.sidebar} ${showing?styles.opened:''}`}>
+      <div><Link href='/'><div className={styles.naslov}>Aleksandar Slavov</div></Link></div>
       {
         Object.keys(lektire).map((key, index) => (
           <div key={index}>
@@ -20,9 +22,11 @@ const Sidebar = ({ lektira, showing }) => {
             {
               key === lektira &&
               lektire[key].sadrzaj.map((element, i) => element.blok === 'podnaslov' ? (
-                <div key={i} className={styles.podnaslov} >
-                  {element.tekst}
-                </div>
+                <a key={i} href={`${lektira}#${element.tekst}`}>
+                  <div className={styles.podnaslov} >
+                    {element.tekst}
+                  </div>
+                </a>
               ) : null)
             }
           </div>

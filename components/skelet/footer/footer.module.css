@@ -1,0 +1,19 @@
+.footer {
+    height: var(--footer-height);
+    width: 100%;
+    background-color: var(--lightest-background);
+    color: var(--light-text);
+    padding: 0.5em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer>span {
+    text-align: center;
+}
+
+.footer>span>a:hover { 
+    color: var(--text);
+}

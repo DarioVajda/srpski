@@ -41,21 +41,22 @@ export default function Page({ params }) {
   const [ showingNavBar, setShowingNavBar ] = useState(false);
 
   const showNavBar = () => {
-    setShowingNavBar(!showingNavBar)
+    console.log(!showingNavBar);
+    setShowingNavBar(!showingNavBar);
   }
 
   return (
     <div className={styles.wrapper}>
       <Header lektira={params.lektira} showNavBar={showNavBar} />
       <div>
-        <Sidebar lektira={params.lektira} showing={showNavBar} />
+        <Sidebar lektira={params.lektira} showing={showingNavBar} />
         <div className={styles.main}>
           {
             lektire[params.lektira] && 
             lektire[params.lektira].sadrzaj && 
             lektire[params.lektira].sadrzaj.map((element, index) => (
               // <div id={index}>{element.blok}</div>
-              pickComponent(element)
+              <div key={index}>{pickComponent(element)}</div>
             ))
           }
           <Footer lektira={params.lektira} />

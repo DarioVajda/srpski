@@ -1,3 +1,4 @@
 .podnaslov{
     margin: 12px;
+    padding-top: var(--header-height);
 }

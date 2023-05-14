@@ -3,7 +3,7 @@ import styles from './podnaslov.module.css'
 
 const Podnaslov = (props) => {
   return (
-    <h2 className={styles.podnaslov}>{props.tekst}</h2>
+    <h2 className={styles.podnaslov} id={props.tekst}>{props.tekst}</h2>
   )
 }
 
