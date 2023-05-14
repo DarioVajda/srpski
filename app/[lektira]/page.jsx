@@ -14,6 +14,7 @@ import Paragraf from '@/components/blokovi/paragraf/Paragraf';
 import Podnaslov from '@/components/blokovi/podnaslov/Podnaslov';
 import YoutubeVideo from '@/components/blokovi/youtubeVideo/YoutubeVideo';
 import Razmak from '@/components/blokovi/razmak/Razmak';
+import Slika from '@/components/blokovi/slika/Slika';
 
 function pickComponent(args){
   switch (args.blok) {
@@ -23,6 +24,8 @@ function pickComponent(args){
       return <Paragraf tekst={args.tekst}/>
     case 'ytVideo':
       return <YoutubeVideo href={args.href}/>
+    case 'slika':
+      return <Slika putanja={args.putanja} visina={args.visina} sirina={args.sirina}/>
     case 'razmak':
       return <Razmak/>
     default:
