@@ -1,19 +1,33 @@
-.youtubeVideo {
+/* .youtubeVideo {
     overflow: hidden;
-    padding-bottom: 56.25%;
     position: relative;
-    height: 0;
     margin: 16px;
+    max-width: 1024px;
+    max-height: 576px;
+    width: 100%;
+    height: 100%;
 }
   
 .youtubeVideo iframe {
     left: 0;
     top: 0;
+
+    position: absolute;
+}*/
+
+.youtubeVideo iframe {
     max-width: 1024px;
     max-height: 576px;
     width: 100%;
     height: 100%;
-    position: absolute;
 }
-  
-  
+
+.youtubeVideo
+{
+    overflow: hidden;
+    display: block;
+    margin: 16px auto;
+    padding: 0 16px;
+    max-width: 100%;
+    height: 600px;
+}

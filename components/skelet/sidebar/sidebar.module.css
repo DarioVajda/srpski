@@ -8,7 +8,7 @@
     background-color: var(--light-background);
     border: 1px solid var(--light-text);
     border-color: transparent var(--light-text) transparent transparent;
-    transition: left .3s linear, width .3s linear;
+    transition: left .2s ease-in-out, width .2s ease-in-out;
 
     display: flex;
     justify-content: flex-start;

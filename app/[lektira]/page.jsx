@@ -16,6 +16,7 @@ import YoutubeVideo from '@/components/blokovi/youtubeVideo/YoutubeVideo';
 import Razmak from '@/components/blokovi/razmak/Razmak';
 import Slika from '@/components/blokovi/slika/Slika';
 import Pdf from '@/components/blokovi/pdf/Pdf';
+import Link from '@/components/blokovi/link/Link'
 
 function pickComponent(args){
   switch (args.blok) {
@@ -29,6 +30,8 @@ function pickComponent(args){
       return <Slika putanja={args.putanja}/>
     case 'pdf':
       return <Pdf putanja={args.putanja}/>
+    case 'link':
+      return <Link href={args.href} tekst={args.tekst}/>
     case 'razmak':
       return <Razmak/>
     default:
