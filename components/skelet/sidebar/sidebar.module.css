@@ -29,10 +29,10 @@
 
 .naslov, .podnaslov {
     cursor: pointer;
-    transition: scale 0.3s ease-in-out;
+    transition: scale 0.1s ease-in-out;
     width: fit-content;
 }
 
 .naslov:hover, .podnaslov:hover {
-    scale: 1.1;
+    scale: 1.08;
 }
