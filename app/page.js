@@ -36,9 +36,9 @@ function pickComponent(args){
 
 export default function Page({ }) {
 
-  const home = {
-    
-  }
+  const home = [
+
+  ];
 
   const [ showingNavBar, setShowingNavBar ] = useState(false);
 
