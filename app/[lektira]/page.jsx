@@ -13,21 +13,26 @@ import Footer from '@/components/skelet/footer/Footer';
 import Paragraf from '@/components/blokovi/paragraf/Paragraf';
 import Podnaslov from '@/components/blokovi/podnaslov/Podnaslov';
 import YoutubeVideo from '@/components/blokovi/youtubeVideo/YoutubeVideo';
+import Razmak from '@/components/blokovi/razmak/Razmak';
+import Slika from '@/components/blokovi/slika/Slika';
+import Pdf from '@/components/blokovi/pdf/Pdf';
 
 function pickComponent(args){
   switch (args.blok) {
     case 'podnaslov':
       return <Podnaslov tekst={args.tekst}/>
-      break;
     case 'paragraf':
       return <Paragraf tekst={args.tekst}/>
-      break;
     case 'ytVideo':
       return <YoutubeVideo href={args.href}/>
-      break;
+    case 'slika':
+      return <Slika putanja={args.putanja}/>
+    case 'pdf':
+      return <Pdf putanja={args.putanja}/>
+    case 'razmak':
+      return <Razmak/>
     default:
       return <div>{args.blok}</div>
-      break;
   }
 }
 
@@ -44,7 +49,7 @@ export default function Page({ params }) {
       <Header lektira={params.lektira} showNavBar={showNavBar} />
       <div>
         <Sidebar lektira={params.lektira} showing={showNavBar} />
-        <div>
+        <div className={styles.main}>
           {
             lektire[params.lektira] && 
             lektire[params.lektira].sadrzaj && 
