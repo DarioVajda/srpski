@@ -10,7 +10,7 @@ import lektire from '@/components/lektire'
 const Sidebar = ({ lektira, showing }) => {
   return (
     <div className={`${styles.sidebar} ${showing?styles.opened:''}`}>
-      <div><Link href='/'><div className={styles.naslov}>Aleksandar Slavov</div></Link></div>
+      <div><a href='/'><div className={styles.naslov}>Aleksandar Slavov</div></a></div> {/*Ovo je promenjeno u a jer inace se iz nekog razloga font pokvari, nemam pojma kako popraviti*/}
       {
         Object.keys(lektire).map((key, index) => (
           <div key={index}>

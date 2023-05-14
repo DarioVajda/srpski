@@ -8,3 +8,11 @@
     width: 1000px;
     height: 700px;
 }
+
+.pdf a
+{
+    text-align: justify;
+    margin: 16px 4vw;
+    color: var(--link);
+    text-decoration: underline;
+}
