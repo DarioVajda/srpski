@@ -6,7 +6,7 @@ const lektire = {
         sadrzaj: [
             { blok: 'podnaslov', tekst: 'Biografija Pisca (npr)' },
             { blok: 'paragraf', tekst: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodo consequat. Duis aute irure dolor in longinquitate levis, in gravitate brevis soleat esse, ut eius magnitudinem celeritas, diuturnitatem.' },
-            { blok: 'slika', putanja: 'https://daily.jstor.org/wp-content/uploads/2019/06/franz_kafkas_the_trial_its_funny_because_its_true_1050x700.jpg'},
+
             { blok: 'podnaslov', tekst: 'Analiza dela' },
             { blok: 'paragraf', tekst: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore disputandum putant. Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium.' },
             { blok: 'link', href: 'http://www.themostamazingwebsiteontheinternet.com/', tekst:'Evo linka'},
