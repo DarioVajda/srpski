@@ -51,16 +51,16 @@ const lektire = {
         ]
     },
     cetvrta: {
-        naslov: 'Nesto trece',
-        pisac: 'Franc Kafka 2',
+        naslov: 'Romeo i Julija',
+        pisac: 'Viljem Šekspir',
         sadrzaj: [
-            { blok: 'podnaslov', tekst: 'Biografija pisca (npr)' },
+            { blok: 'podnaslov', tekst: 'Biografija Viljema Šekspira' },
             { blok: 'paragraf', tekst: '...' },
             { blok: 'slika', putanja: '.../slika.png' },
-            { blok: 'podnaslov', tekst: 'Biografija pisca (npr)' },
+            { blok: 'podnaslov', tekst: 'Lik Romea' },
             { blok: 'paragraf', tekst: '...' },
             { blok: 'slika', putanja: '.../slika.png' },
-            { blok: 'podnaslov', tekst: 'Biografija pisca (npr)' },
+            { blok: 'podnaslov', tekst: 'Lik Julije' },
             { blok: 'paragraf', tekst: '...' },
             { blok: 'slika', putanja: '.../slika.png' },
         ]
