@@ -50,7 +50,7 @@ const lektire = {
             { blok: 'slika', putanja: '.../slika.png' },
         ]
     },
-    cetvrta stranica: {
+    cetvrta: {
         naslov: 'Nesto trece',
         pisac: 'Franc Kafka 2',
         sadrzaj: [
