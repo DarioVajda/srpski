@@ -22,7 +22,7 @@ const lektire = {
     },
     drugo: {
         naslov: 'Koreni',
-        pisac: 'Podnaslov',
+        pisac: 'Dobrica Ćosić',
         sadrzaj: [
             { blok: 'podnaslov', tekst: 'Biografija Pisca (npr)' },
             { blok: 'paragraf', tekst: '...' },
