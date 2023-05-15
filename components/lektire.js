@@ -15,8 +15,8 @@ const lektire = {
             { blok: 'podnaslov', tekst: 'Likovi' },
             { blok: 'paragraf', tekst: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore disputandum putant. Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium.' },
             { blok: 'ytVideo', href: 'https://www.youtube.com/embed/dQw4w9WgXcQ'},
-            { blok: 'slika', putanja: 'andrija.jpg'},
-            { blok: 'slika', putanja: 'the-tates.png'},
+            { blok: 'slika', putanja: 'sl3.jpg'},
+            { blok: 'slika', putanja: 'sl2.png'},
             { blok: 'pdf', putanja: 'bitcoin.pdf'}
         ]
     },
