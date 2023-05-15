@@ -21,7 +21,7 @@ const lektire = {
         ]
     },
     drugo: {
-        naslov: 'Nesto drugo',
+        naslov: 'Koreni',
         pisac: 'Podnaslov',
         sadrzaj: [
             { blok: 'podnaslov', tekst: 'Biografija Pisca (npr)' },
