@@ -14,12 +14,15 @@ const lektire = {
             { blok: 'razmak'},
             { blok: 'podnaslov', tekst: 'Likovi' },
             { blok: 'paragraf', tekst: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore disputandum putant. Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium.' },
-            { blok: 'ytVideo', href: 'https://www.youtube.com/embed/dQw4w9WgXcQ'}
+            { blok: 'ytVideo', href: 'https://www.youtube.com/embed/dQw4w9WgXcQ'},
+            { blok: 'slika', putanja: 'andrija.jpg'},
+            { blok: 'slika', putanja: 'the-tates.png'},
+            { blok: 'pdf', putanja: 'bitcoin.pdf'}
         ]
     },
-    proces1: {
-        naslov: 'Proces1',
-        pisac: 'Franc Kafka1',
+    drugo: {
+        naslov: 'Nesto drugo',
+        pisac: 'Podnaslov',
         sadrzaj: [
             { blok: 'podnaslov', tekst: 'Biografija Pisca (npr)' },
             { blok: 'paragraf', tekst: '...' },
@@ -32,9 +35,9 @@ const lektire = {
             { blok: 'slika', putanja: '.../slika.png' },
         ]
     },
-    proces2: {
-        naslov: 'Proces2',
-        pisac: 'Franc Kafka2',
+    trece: {
+        naslov: 'Nesto trece',
+        pisac: 'Franc Kafka 2',
         sadrzaj: [
             { blok: 'podnaslov', tekst: 'Biografija Pisca (npr)' },
             { blok: 'paragraf', tekst: '...' },
